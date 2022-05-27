@@ -1,0 +1,28 @@
+____________________________________________________
+                       Report                       
+____________________________________________________
+The url is: http://testphp.vulnweb.com/artists.php?artist=1
+
+scanning...
+            .....
+                   searching....
+                                 Connecting!!!!!
+
+[!] Trying http://testphp.vulnweb.com/artists.php?artist=1"
+[+] SQL Injection vulnerability detected, link: http://testphp.vulnweb.com/artists.php?artist=1"
+
+
+____________________________________________________
+                       Mitigation                     
+____________________________________________________
+You Must check the following:
+1. Input validation
+2. Parametrized queries
+3. Stored procedures
+4. Escaping
+5. Avoiding administrative privileges
+6. Web application firewall
+____________________________________________________
+
+Scanned at = 27/05/2022 19:14:38
+Time taken 7.841838598251343

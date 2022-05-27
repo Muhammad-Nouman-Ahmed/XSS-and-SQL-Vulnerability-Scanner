@@ -1,0 +1,34 @@
+____________________________________________________
+                       Report                       
+____________________________________________________
+The url is: http://testphp.vulnweb.com/artists.php?artist=1
+
+scanning...
+            .....
+                   searching....
+                                 Connecting!!!!!
+
+[+] Detected 1 forms on http://testphp.vulnweb.com/artists.php?artist=1.
+[+] XSS Detected on http://testphp.vulnweb.com/artists.php?artist=1
+[*] Form details:
+{'action': 'search.php?test=query',
+ 'inputs': [{'name': 'searchFor',
+             'type': 'text',
+             'value': "<Script>alert('hi')</scripT>"},
+            {'name': 'goButton', 'type': 'submit'}],
+ 'method': 'post'}
+
+
+____________________________________________________
+                       RISKS                            
+________________________________________________________
+1. Impersonate or masquerade as the victim user.
+2. Carry out any action that the user is able to perform
+3. Capture the user's login credentials
+4. Perform virtual defacement of the web site
+5. Inject trojan functionality into the web site
+____________________________________________________
+
+Scanned at = 27/05/2022 19:15:58
+Time taken 13.577288627624512
+True
